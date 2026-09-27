@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avgeeks Planespot Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="gallery-title">
+    AVGEEKS PLANESPOT GALLERY
+    
+  </h1>
+  <hr>
+
+  <h2 id="introduction">
+    Planespotting Pics and Videos by-
+    <span id="spotter">
+      vecc_spotter
+      <svg class="instagram-icon" viewBox="0 0 24 24" aria-label="Instagram">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="18" cy="6" r="1" class="instagram-dot"></circle>
+      </svg>
+    </span>
+  </h2>
+  <hr>
+
+  <p id="about">
+    <b><u>Planespotting</u></b> is the hobby of identifying and cataloging aircraft.
+  </p>
+  <hr>
+
+  <h1 id="hereare">
+    Here are some good shots taken by me at
+    <i><u><b>VECC/CCU!</b></u></i>
+  </h1>
+
+  <img
+    id="b747"
+    src="/b747.jpeg"
+    height="300"
+    width="300"
+    alt="Cathay Pacific Boeing 747"
+  >
+  <h3>CATHAY PACIFIC B747-400 HKG-CCU</h3>
+  <hr>
+
+  <img
+    id="cessna"
+    src="/cessna carvaan.jpeg"
+    height="300"
+    width="300"
+    alt="Cessna Caravan"
+  >
+  <h3>CESSNA CARAVAN IXW-CCU</h3>
+  <hr>
+
+  <img
+    id="b777"
+    src="/B777.jpeg"
+    height="300"
+    width="300"
+    alt="Air India Boeing 777"
+  >
+  <h3>AIR INDIA B777-300ER SFO-CCU</h3>
+  <hr>
+
+  <h2 id="video1">
+    Here is a video of the new <span id="a1">Air India</span> Airbus A320neo
+    livery taxiing to the gate at RGIA.
+  </h2>
+  <video id="video1a" src="/Airindia.mp4" controls height="300" width="300">
+    Your browser does not support the video element.
+  </video>
+  <hr>
+
+  <h2 id="il76">
+    <span id="gel">Russian IL-76TD-90</span> aircraft at CCU
+  </h2>
+  <video id="il76a" src="/gelix il76.mp4" controls height="300" width="300">
+    Your browser does not support the video element.
+  </video>
+  <hr>
+
+  <h2 id="airindia1">
+    <span id="aix1">Air India Express</span> B737-800 aircraft landing at CCU
+  </h2>
+  <video id="airindia1a" src="/aix.mp4" controls height="300" width="300">
+    Your browser does not support the video element.
+  </video>
+  <hr>
+
+  <h1 id="fr24">
+    This is an official plane-tracking website where you can track flights around the world.
+  </h1>
+
+  <iframe
+    id="fr24a"
+    src="https://www.flightradar24.com/22.63,88.45/11"
+    height="500"
+    width="500"
+    title="FlightRadar24 map centered near Kolkata"
+  ></iframe>
+  <hr>
+
+  <h2>Here are some details of flights operated in India.</h2>
+
+  <table>
+    <tr>
+      <th scope="col">AIRLINE NAME</th>
+      <th scope="col">AIRCRAFT TYPE</th>
+    </tr>
+    <tr><td>INDIGO</td><td>A320NEO</td></tr>
+    <tr><td>AIR INDIA</td><td>A320NEO</td></tr>
+    <tr><td>AIR INDIA</td><td>B777-300ER</td></tr>
+    <tr><td>AIR INDIA</td><td>B787 DREAMLINER</td></tr>
+    <tr><td>AIR INDIA EXPRESS</td><td>B737-800</td></tr>
+    <tr><td>AKASA AIRLINES</td><td>B737-800</td></tr>
+    <tr><td>SPICEJET</td><td>B737-800</td></tr>
+    <tr><td>SPICEJET</td><td>DASH-8</td></tr>
+    <tr><td>VISTARA</td><td>A320NEO</td></tr>
+    <tr><td>VISTARA</td><td>B787-DREAMLINER</td></tr>
+    <tr><td>STAR AIR</td><td>EMBRAER E-145</td></tr>
+  </table>
+
+  <h3>Select your favourite airline and aircraft type to know more about it.</h3>
+
+  <form action="/avgeekspotter.html" method="get">
+    <label for="airline">Select airline:</label>
+    <select name="airline" id="airline">
+      <option value="indigo">Indigo</option>
+      <option value="airindia">Air India</option>
+      <option value="airindiaexpress">Air India Express</option>
+      <option value="akasa">Akasa Airlines</option>
+      <option value="spicejet">SpiceJet</option>
+      <option value="vistara">Vistara</option>
+      <option value="starair">Star Air</option>
+    </select>
+
+    <label for="aircraft">Select aircraft type:</label>
+    <select name="aircraft" id="aircraft">
+      <option value="a320neo">A320neo</option>
+      <option value="b777300er">B777-300ER</option>
+      <option value="b787dreamliner">B787 Dreamliner</option>
+      <option value="b737800">B737-800</option>
+      <option value="dash8">Dash-8</option>
+      <option value="embraer145">Embraer E-145</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <hr>
+
+  <h2 class="thank-you">Thank you for visiting my website. I hope you enjoyed it!</h2>
+
+  <section id="contact-details" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Get in touch</h2>
+
+    <div class="contact-item">
+      <svg class="contact-icon instagram-icon" viewBox="0 0 24 24" aria-label="Instagram">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="18" cy="6" r="1" class="instagram-dot"></circle>
+      </svg>
+      <span>Instagram ID: VECC_SPOTTER</span>
+    </div>
+
+    <div class="contact-item">
+      <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Email">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <path d="m4 7 8 6 8-6"></path>
+      </svg>
+      <a href="mailto:vi4huv3rma@gmail.com">vi4huv3rma@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+      <svg class="contact-icon" viewBox="0 0 24 24" aria-label="Phone">
+        <path d="M7 3h3l2 5-2 1.5a14 14 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 5c0-1.1.9-2 2-2Z"></path>
+      </svg>
+      <a href="tel:9330254280">9330254280</a>
+    </div>
+  </section>
+
+  <hr>
+</body>
+</html>

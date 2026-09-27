@@ -1,0 +1,494 @@
+:root {
+  color-scheme: dark;
+  --navy: #071a30;
+  --blue: #0b3d66;
+  --cyan: #28b8ff;
+  --ice: #dff3ff;
+  --muted: #a9c9e2;
+  --line: rgb(91 177 230 / 28%);
+  --panel: rgb(9 39 68 / 72%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 28px 6%;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgb(13 104 166 / 28%), transparent 38rem),
+    linear-gradient(145deg, #061326, #092544 55%, #06172c);
+  background-attachment: fixed;
+  color: var(--ice);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+p {
+  line-height: 1.35;
+}
+
+hr {
+  height: 1px;
+  margin: 30px 0;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity: 0.5;
+}
+
+/* Main gallery title */
+#gallery-title {
+  width: fit-content;
+  max-width: 100%;
+  margin: 14px auto 24px;
+  padding: 12px 20px;
+  border: 1px solid rgb(40 184 255 / 65%);
+  border-radius: 14px;
+  background: transparent;
+  color: #f2faff;
+  text-align: center;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-shadow: 0 0 14px rgb(40 184 255 / 48%);
+  box-shadow: 0 0 18px rgb(40 184 255 / 15%);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+#gallery-title:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 0 25px rgb(40 184 255 / 32%);
+}
+
+.title-star {
+  padding: 0 8px;
+  color: var(--cyan);
+  font-size: 0.8em;
+  text-shadow: 0 0 12px rgb(40 184 255 / 80%);
+}
+
+/* Centered introduction and spotter name */
+#introduction {
+  margin: 26px auto;
+  color: var(--ice);
+  text-align: center;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+}
+
+#spotter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-left: 5px;
+  color: #73d2ff;
+  font-weight: 750;
+}
+
+.instagram-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--cyan);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 5px rgb(40 184 255 / 45%));
+}
+
+.instagram-dot {
+  fill: var(--cyan);
+  stroke: none;
+}
+
+#about {
+  width: min(100%, 820px);
+  margin: 26px auto;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: #d9edff;
+  text-align: center;
+  font-size: 1.08rem;
+}
+
+#hereare,
+#fr24 {
+  margin: 36px auto 24px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: #f2faff;
+  text-align: center;
+  text-shadow: 0 0 15px rgb(40 184 255 / 18%);
+}
+
+/* Photos and videos */
+img,
+video {
+  display: block;
+  width: min(100%, 540px);
+  height: auto;
+  margin: 22px auto 12px;
+  border: 1px solid rgb(91 177 230 / 45%);
+  border-radius: 16px;
+  background: #061326;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 30%);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+img:hover,
+video:hover {
+  transform: translateY(-4px);
+  border-color: var(--cyan);
+  box-shadow: 0 18px 38px rgb(0 0 0 / 38%), 0 0 18px rgb(40 184 255 / 15%);
+}
+
+body > h3 {
+  width: fit-content;
+  max-width: 100%;
+  margin: 14px auto 26px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--cyan);
+  border-radius: 9px;
+  background: linear-gradient(100deg, rgb(8 127 202 / 20%), rgb(8 127 202 / 5%));
+  color: #dff3ff;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+}
+
+/* Video section headings */
+#video1,
+#il76,
+#airindia1 {
+  width: fit-content;
+  max-width: 100%;
+  margin: 30px auto 16px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--cyan);
+  border-radius: 10px;
+  background: linear-gradient(100deg, rgb(8 127 202 / 20%), rgb(8 127 202 / 5%));
+  color: var(--ice);
+  text-align: center;
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+}
+
+/* Flight tracker */
+#fr24a {
+  display: block;
+  width: min(100%, 780px);
+  height: 480px;
+  margin: 22px auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 30%);
+}
+
+/* Flight table */
+table {
+  width: min(100%, 780px);
+  margin: 22px auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 22%);
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(100deg, #07558b, #087fca);
+  color: white;
+  letter-spacing: 0.04em;
+}
+
+td {
+  color: #d9edff;
+  transition: background 150ms ease;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+tr:hover td {
+  background: rgb(40 184 255 / 10%);
+}
+
+/* Airline selection form */
+form {
+  width: min(100%, 780px);
+  margin: 22px auto;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #c8e7ff;
+  font-weight: 700;
+}
+
+select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #071a30;
+  color: var(--ice);
+  font: inherit;
+}
+
+input[type="submit"] {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(100deg, #087fca, #13a8ed);
+  color: white;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 20px rgb(0 127 202 / 30%);
+}
+
+select:focus,
+input[type="submit"]:focus-visible {
+  outline: 3px solid rgb(40 184 255 / 35%);
+  outline-offset: 2px;
+}
+
+/* Thank-you and contact details */
+.thank-you,
+#contact-heading {
+  color: var(--ice);
+  text-align: center;
+}
+
+.thank-you {
+  margin: 34px auto 20px;
+}
+
+#contact-details {
+  width: min(100%, 620px);
+  margin: 22px auto;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(140deg, rgb(9 47 82 / 88%), rgb(7 29 55 / 88%));
+  box-shadow: 0 12px 30px rgb(0 0 0 / 24%);
+}
+
+#contact-heading {
+  margin: 0 0 16px;
+  color: #8cdbff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: rgb(40 184 255 / 7%);
+  color: #e4f5ff;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.contact-item:hover {
+  transform: translateX(3px);
+  border-color: var(--line);
+  background: rgb(40 184 255 / 13%);
+}
+
+.contact-icon {
+  flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: var(--cyan);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-item a {
+  color: #dff3ff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  body {
+    padding: 18px 5%;
+  }
+
+  #gallery-title {
+    padding: 11px 12px;
+    letter-spacing: 0.035em;
+  }
+
+  #hereare,
+  #fr24 {
+    padding: 14px 12px;
+  }
+
+  #fr24a {
+    height: 360px;
+  }
+
+  th,
+  td {
+    padding: 10px 8px;
+    font-size: 0.88rem;
+  }
+
+  form,
+  #contact-details {
+    padding: 16px;
+  }
+}
+
+/* Honor reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  img:hover,
+  video:hover,
+  input[type="submit"]:hover,
+  .contact-item:hover {
+    transform: none;
+  }
+}
+/* Extra hover effects */
+#gallery-title:hover {
+  transform: scale(1.025);
+  text-shadow: 0 0 10px #28b8ff, 0 0 24px rgb(40 184 255 / 65%);
+}
+
+#about:hover,
+#hereare:hover,
+#video1:hover,
+#il76:hover,
+#airindia1:hover,
+#contact-details:hover {
+  transform: translateY(-3px);
+  border-color: rgb(40 184 255 / 70%);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 28%), 0 0 18px rgb(40 184 255 / 15%);
+}
+
+#about,
+#hereare,
+#video1,
+#il76,
+#airindia1,
+#contact-details {
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+select:hover {
+  border-color: #28b8ff;
+  box-shadow: 0 0 12px rgb(40 184 255 / 18%);
+}
+
+.contact-icon {
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 5px rgb(40 184 255 / 65%));
+}
+/* Extra subtle interactions */
+#introduction,
+body > h3 {
+  transition: color 180ms ease, text-shadow 180ms ease, border-color 180ms ease;
+}
+
+#introduction:hover,
+body > h3:hover {
+  color: #ffffff;
+  text-shadow: 0 0 14px rgb(40 184 255 / 45%);
+  border-color: rgb(40 184 255 / 65%);
+}
+
+img:hover,
+video:hover {
+  transform: translateY(-5px) scale(1.015);
+  box-shadow: 0 18px 38px rgb(0 0 0 / 38%), 0 0 22px rgb(40 184 255 / 22%);
+}
+
+#fr24a {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+#fr24a:hover {
+  border-color: rgb(40 184 255 / 70%);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 35%), 0 0 18px rgb(40 184 255 / 20%);
+}
+
+select,
+.contact-item a {
+  transition: border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+select:hover {
+  border-color: #28b8ff;
+  box-shadow: 0 0 12px rgb(40 184 255 / 18%);
+}
+
+.contact-item a:hover {
+  color: #72d2ff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
